@@ -1,1 +1,405 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+      // Hide the feature content
+      $(document).ready(function(){
+        // Hide the list item
+        $("#security-door,#phone-book,#timer-control").hide();
+
+        $("#btn-camera").click(function(){
+          $("#security-camera").fadeIn();
+          $("#security-door").fadeOut();
+          $("#phone-book").fadeOut();
+          $("#timer-control").fadeOut();
+        });
+        $("#btn-door").click(function(){
+          $("#security-door").fadeIn();
+          $("#security-camera").fadeOut();
+          $("#phone-book").fadeOut();
+          $("#timer-control").fadeOut();
+        });
+        $("#btn-phone-book").click(function(){
+          $("#phone-book").fadeIn();
+          $("#security-camera").fadeOut();
+          $("#security-door").fadeOut();
+          $("#timer-control").fadeOut();
+        });
+        $("#btn-timer-control").click(function(){
+          $("#timer-control").fadeIn();
+          $("#security-camera").fadeOut();
+          $("#phone-book").fadeOut();
+          $("#security-door").fadeOut();
+        });
+
+      });
+    </script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Start </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">Thomas Do - Portfolio</h1>
+        <h3 class="mb-5">
+          <!-- <em>A Free Bootstrap Theme</em> -->
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About me</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>It is easy to navigate my project!</h2>
+            <p class="lead mb-5" align="left">
+              <ul align="left" style="font-size:22px">
+                <li type="disc">As a <em>computer sciene major</em>, I am studying many interested fields of
+                <em>data structure, algorithm, languages, and solving problems</em></li>
+                <li type="disc">My skills is writing computer languages such as <em>Python, C++, Java.</em>
+                I’m a firm believer in deliberate practice and a <em>love for your projects</em></li>
+                <li type="disc">You can find my projects in the <em>button below!</em></li>
+              </ul>
+            </p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio</h3>
+          <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#security-camera">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Security Camera</h2>
+                  <p class="mb-0">Face recognize (Raspberry Pi) to alert to smart devices the stranger in front of your property!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#project-details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Timer Control</h2>
+                  <p class="mb-0">Count down time and terminate the program with process and child threats!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#project-details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Security Door</h2>
+                  <p class="mb-0">Control door lock (Arduino Uno) with smart device Internet of Things-IoT!</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#project-details">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Phone Book</h2>
+                  <p class="mb-0">Implemented multiple data structure into phone book database.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <!-- Page Content -->
+    <section class="content-section bg-light" id="project-details">
+      <div class="container">
+
+        <div class="my-4" id="security-camera" >
+          <!-- Portfolio Item Security Camera -->
+          <h1 class="my-4">Projects
+            <small>Security Camera</small>
+          </h1>
+          <!-- Portfolio Item Security Camera -->
+          <div class="row">
+
+            <div class="col-md-7">
+              <!-- <img class="img-fluid" src="http://placehold.it/750x500" alt=""> -->
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wZLdDsgZd_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-5">
+              <h3 class="my-3">Project Description</h3>
+              <p align="justify" style="font-size:18px">The project implements a Raspberry Pi 3 Model B+
+                and a camera module to provide a low-cost solution to a home security system
+                with feature of face recognition, email, and message to the cell phone
+              </p>
+              <h3 class="my-3">Project Details</h3>
+              <ul style="font-size:18px">
+                <li>Scrum meeting and collaboration with git version control in the team project</li>
+                <li>Applied machine learning to recognize the face</li>
+                <li>Wireless communication from Raspberry Pi to email and Multimedia Messaging Service (MMS) to a cell phone</li>
+                <!-- <li>Source Code</li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /.row Security Camera -->
+        </div>
+        <div class="my-4" id="security-door" >
+          <!-- Portfolio Item Security Door -->
+          <h1 class="my-4">Projects
+            <small>Security Door</small>
+          </h1>
+          <!-- Portfolio Item Security Door -->
+          <div class="row">
+
+            <div class="col-md-7">
+              <!-- <img class="img-fluid" src="http://placehold.it/750x500" alt=""> -->
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8B4OeJqQKjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-5">
+              <h3 class="my-3">Project Description</h3>
+              <p align="justify" style="font-size:16px">
+                This project is called AKSYS, which is an acronym for Automatic Keyless System.
+                This system was created to solve the problem for an economic, secure, convenient and
+                easy to make convenience for unlocking and locking sliding bolt latch doors.
+                For the system, we used the Arduino UNO device along with the Bluetooth, LED, and servo attachments.
+                The device was programmed using the Arduino language(largely based on C/C++) and the Arduino IDE.
+              </p>
+              <h3 class="my-3">Project Details</h3>
+              <ul style="font-size:18px">
+                <li>Developed the prototype on Arduino Uno</li>
+                <li>Bluetooth communication between the Android phone and Arduino</li>
+                <li>Developed GUI application for user-friendly to control servo</li>
+                <!-- <li>Source Code</li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- /.row Security Door -->
+        </div>
+        <div class="my-4" id="phone-book" >
+          <!-- Portfolio Item Phone Book -->
+          <h1 class="my-4">Projects
+            <small>Phone Book</small>
+          </h1>
+          <!-- Portfolio Item Phone Book -->
+          <div class="row">
+
+            <div class="col-md-7">
+              <!-- <img class="img-fluid" src="http://placehold.it/750x500" alt=""> -->
+              <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8B4OeJqQKjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <img class="img-fluid" src="img/yellowPages.png" alt="">
+            </div>
+
+            <div class="col-md-5">
+              <h3 class="my-3">Project Description</h3>
+              <p align="justify" style="font-size:16px">This assignment, I created the data structure of the yellow pages.
+                It implemented the doubly linked list with node (head and tail) and data.
+                Each data has a dictionary node with the key is a phone number and the value is the name of the owner.
+                It stored the data in each <strong><em>hashtable, binary search tree, and red-black tree </em></strong>for insertion, deletion, and search</p>
+              <h3 class="my-3">Project Details</h3>
+              <ul style="font-size:15px">
+                <li>Created the data structure doubly linked list and dictionary node</li>
+                <li>Stored doubly linked list in the hashtable, binary search tree, and red-black tree</li>
+                <li> <strong><em>Insertion, Deletion, and Search </em></strong>the dictionary node correspondence with the complexity big O of 1 and log(n) - <strong><em>O(1) and O(log(n))</em></strong> </li>
+                <li><a href="https://gitlab.com/Tomd9/yellow-pages">Source Code</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.row Phone Book -->
+        </div>
+        <div class="my-4" id="timer-control" >
+          <!-- Portfolio Item Timer Control -->
+          <h1 class="my-4">Projects
+            <small>Timer Control</small>
+          </h1>
+          <!-- Portfolio Item Timer Control -->
+          <div class="row">
+
+            <div class="col-md-6">
+              <!-- <img class="img-fluid" src="http://placehold.it/750x500" alt=""> -->
+              <img class="img-fluid" src="img/time.png" alt="" style="width:50% height:50%">
+              <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="my-3">Project Description</h3>
+              <p align="justify" style="font-size:18px">The project designs and implements a programmable event with C/C++ language
+                 and timer control program. The program has two child threads.
+                 A thread monitors the countdown timer and notifies signal() or pipe().
+                 Other child thread receives the notification and terminates a thread monitor and itself</p>
+              <h3 class="my-3">Project Details</h3>
+              <ul style="font-size:18px">
+                <li>Created <strong><em>one process and two threads</em></strong> in the <strong><em>Linux operating system</em></strong></li>
+                <li>Implemented one thread "wall clock" which prints the hour, minute in local time</li>
+                <li>Implemented other thread received notification and terminate the program</li>
+                <li><a href="https://gitlab.com/Tomd9/time">Source Code</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.row Timer Control -->
+        </div>
+
+        <!-- Related Projects Row -->
+        <h3 class="my-4">Other Projects</h3>
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-6 mb-4 px-4" id="btn-camera">
+            <a href="#security-camera">
+              <img class="img-fluid img-thumbnail" src="img/raspberrypi.jpg" alt="" style="width:500px height:100px">
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4 px-0" id="btn-door">
+            <a href="#security-door">
+              <img class="img-fluid img-thumbnail" src="img/arduino.png" alt=""style="width:500px height:300px" >
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4 px-4" id="btn-phone-book">
+            <a href="#phone-book">
+              <img class="img-fluid img-thumbnail" src="img/yellowPages.png" alt="" style="width:500px height:100px">
+            </a>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4 px-5" id="btn-timer-control">
+            <a href="#timer-control">
+              <!-- <img class="img-fluid img-thumbnail" src="http://placehold.it/500x300" alt=""> -->
+              <img class="img-fluid img-thumbnail" src="img/time.png">
+            </a>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact me to linkedin and twitter</h2>
+        <a href="#contact" class="btn btn-xl btn-light mr-4">Contact!</a>
+        <a href="#about" class="btn btn-xl btn-dark">More about me!</a>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.6235622548866!2d-117.07407798504349!3d32.77572168097243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95686a6a04a21%3A0xc39f2ac6bf82f916!2sSan+Diego+State+University!5e0!3m2!1sen!2sus!4v1546627646167"></iframe>
+      <br/>
+      <small>
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.6235622548866!2d-117.07407798504349!3d32.77572168097243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d95686a6a04a21%3A0xc39f2ac6bf82f916!2sSan+Diego+State+University!5e0!3m2!1sen!2sus!4v1546627646167"></a>
+      </small>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/thomas-d">
+              <i class="icon-social-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/messages/compose?recipient_id=&ref_src=twsrc%5Etfw">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://github.com/tomd9">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Thomas Do Portfolio 2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>
