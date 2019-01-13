@@ -1,3 +1,34 @@
+// Hide the porfolio content
+$(document).ready(function(){
+  // Hide the list item
+  $("#security-door,#phone-book,#timer-control").hide();
+
+  $("#btn-camera").click(function(){
+    $("#security-camera").fadeIn();
+    $("#security-door").fadeOut();
+    $("#phone-book").fadeOut();
+    $("#timer-control").fadeOut();
+  });
+  $("#btn-door").click(function(){
+    $("#security-door").fadeIn();
+    $("#security-camera").fadeOut();
+    $("#phone-book").fadeOut();
+    $("#timer-control").fadeOut();
+  });
+  $("#btn-phone-book").click(function(){
+    $("#phone-book").fadeIn();
+    $("#security-camera").fadeOut();
+    $("#security-door").fadeOut();
+    $("#timer-control").fadeOut();
+  });
+  $("#btn-timer-control").click(function(){
+    $("#timer-control").fadeIn();
+    $("#security-camera").fadeOut();
+    $("#phone-book").fadeOut();
+    $("#security-door").fadeOut();
+  });
+});
+
 (function($) {
   "use strict"; // Start of use strict
 
