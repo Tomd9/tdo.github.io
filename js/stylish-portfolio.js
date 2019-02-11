@@ -1,22 +1,22 @@
 // Hide the porfolio content
 $(document).ready(function(){
   // Hide the list item
-  $("#security-door,#phone-book,#timer-control").hide();
+  $("#security-door,#file-editor,#timer-control").hide();
 
   $("#btn-camera").click(function(){
     $("#security-camera").fadeIn();
     $("#security-door").fadeOut();
-    $("#phone-book").fadeOut();
+    $("#file-editor").fadeOut();
     $("#timer-control").fadeOut();
   });
   $("#btn-door").click(function(){
     $("#security-door").fadeIn();
     $("#security-camera").fadeOut();
-    $("#phone-book").fadeOut();
+    $("#file-editor").fadeOut();
     $("#timer-control").fadeOut();
   });
-  $("#btn-phone-book").click(function(){
-    $("#phone-book").fadeIn();
+  $("#btn-file-editor").click(function(){
+    $("#file-editor").fadeIn();
     $("#security-camera").fadeOut();
     $("#security-door").fadeOut();
     $("#timer-control").fadeOut();
@@ -24,7 +24,7 @@ $(document).ready(function(){
   $("#btn-timer-control").click(function(){
     $("#timer-control").fadeIn();
     $("#security-camera").fadeOut();
-    $("#phone-book").fadeOut();
+    $("#file-editor").fadeOut();
     $("#security-door").fadeOut();
   });
 });
